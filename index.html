@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.css"/>  
+    <link rel="stylesheet" href="./assets/vendors/owlcarousel/css/owl.carousel.min.css"/>  
+    <link rel="stylesheet" href="./assets/vendors/owlcarousel/css/owl.theme.default.min.css"/>  
+    <link rel="stylesheet" href="./assets/vendors/aos/aos.css" />
+    <link href="./assets/vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./form/form.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Rentz - v1.0
+  * Template URL: https://abdesigns.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: AB-Designs
+  * License: https://abdesigns.com/license/
+  ======================================================== -->
+
+    <title>Rentz</title>
+</head>
+<body>
+    <div>
+        <!-----------------Heading section----------------->
+
+        <!--Navbar section-->
+        <nav class="navbar navbar-expand-sm fixed-top" id="nav">
+            <h2 class="navbar-brand mt-2">RENTZ</h2>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#cars">Cars</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#faq">Faqs</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <button class="btn" onclick="document.location='#cars'">Vehicles</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--End of Navbar section-->
+
+        
+        <!--Heading texts section-->
+        <header id="home">
+
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <svg  data-bs-target="#demo" data-bs-slide-to="0" class="active">
+                      <circle cx="20" cy="20" r="10"></circle>
+                      <circle cx="20" cy="20" r="10"></circle>
+                    </svg>
+                    <svg  data-bs-target="#demo" data-bs-slide-to="1">
+                      <circle cx="20" cy="20" r="10"></circle>
+                      <circle cx="20" cy="20" r="10"></circle>
+                    </svg>
+                    <svg  data-bs-target="#demo" data-bs-slide-to="2">
+                      <circle cx="20" cy="20" r="10"></circle>
+                      <circle cx="20" cy="20" r="10"></circle>
+                    </svg>
+                </div>
+              
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/background11.jpg" alt="Los Angeles" class="d-block w-100">
+                    <div class="box hero col-lg-4 col-md-8 col-sm-12">
+                        <h1>FAST AND EASY WAY</h1>
+                        <h1>TO RENT A CAR</h1>
+                        <button class="btn mt-2" onclick="openActions()"><i class="fa-solid fa-car-alt"> </i> Find a vehicle</button>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="./assets/imgs/background111.jpg" alt="New York" class="d-block w-100">
+                    <div class="box hero col-lg-4 col-md-8 col-sm-12">
+                      <h1>EVERY QUALITY</h1>
+                      <h1>NEEDED IN A CAR</h1>
+                      <button class="btn mt-2" onclick="openActions()"><i class="fa-solid fa-car-alt"> </i> Find a vehicle</button>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="./assets/imgs/background112.jpg" alt="New York" class="d-block w-100">
+                    <div class="box hero col-lg-4 col-md-8 col-sm-12">
+                      <h1>BEST PRICE</h1>
+                      <h1>YOU CAN EVER GET</h1>
+                      <button class="btn mt-2" onclick="openActions()"><i class="fa-solid fa-car-alt"> </i> Find a vehicle</button>
+                    </div>
+                  </div>
+
+              </div>
+              
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </header>
+
+
+
+        <!--Actions section-->
+        <section id="actions" class="actions section-bg" data-aos="zoom-in">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="heading">
+                <h4>Use steps to rent car</h4>
+                <p>Follow these steps and rent your car immediately</p>
+              </div>
+              <p id="step-indicator">step <span>1</span>/3</p>
+              <button class="btn btn-danger" onclick="closeActions()">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+
+
+            <div class="row col-lg-12 m-auto">
+              <div class="col-lg-4 actions-steps">
+
+                <div class="step active d-flex justify-content-end mb-4 align-items-start">
+                  <div class="texts">
+                    <h5>Find vehicle</h5>
+                    <p>Choose vehicle you want</p>
+                  </div>
+                  <i class="fas fa-car"></i>
+                </div>
+                
+                <div class="step d-flex justify-content-end mb-4 align-items-start">
+                  <div class="texts">
+                    <h5>Payments</h5>
+                    <p>Choose suitable payments</p>
+                  </div>
+                  <i class="fas fa-money-bill"></i>
+                </div>
+                
+                <div class="step d-flex justify-content-end mb-4 align-items-start">
+                  <div class="texts">
+                    <h5>Details</h5>
+                    <p>personal informations</p>
+                  </div>
+                  <i class="fa-solid fa-user"></i>
+                </div>
+              </div>
+
+              <div class="col-lg-8 actions-body">
+
+                <form action="form.php" method="POST">
+                  <div class="action active" data-aos="fade-right">
+                    <h5>Choose Your Vehicle from list</h5>
+                    <div class="cars owl-carousel">
+                      <label for="vehicle1">
+                        <img src="./assets/imgs/suv.png" />
+                        <input type="radio" id="vehicle1" name="vehicle" value="Honda SUV"/>
+                        <p>Honda SUV</p>
+                        <p>$800,000</p>
+                      </label>
+                      <label for="vehicle2">
+                        <img src="./assets/imgs/honda.png" />
+                        <input type="radio" id="vehicle2" name="vehicle" value="Honda taycan"/>
+                        <P>Honda taycan</P>
+                        <p>$500,000</p>
+                      </label>
+                      <label for="vehicle3">
+                        <img src="./assets/imgs/honda2.png" />
+                        <input type="radio" id="vehicle3" name="vehicle" value="Honda pilot"/>
+                        <p>Honda Pilot</p>
+                        <p>$760,000</p>
+                      </label>
+                      <label for="vehicle4">
+                        <img src="./assets/imgs/volkswagen.png" />
+                        <input type="radio" id="vehicle4" name="vehicle" value="Volkswagen"/>
+                        <p>Volkswagen</p>
+                        <p>$820,000</p>
+                      </label>
+                      <label for="vehicle5">
+                        <img src="./assets/imgs/honda3.png" />
+                        <input type="radio" id="vehicle5" name="vehicle" value="Toyota Hillux"/>
+                        <p>Toyota Hillux</p>
+                        <p>$680,000</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="action" data-aos="fade-right">
+                    <h5>Choose Your Payments Terms</h5>
+                    <label for="payment">
+                      <p>Initial payment($)</p>
+                      <input type="text" value="150,000" name="payment" id="payment"/>
+                    </label>
+                    <label for="months">
+                      <p>Terms of payment(%)</p>
+                      <select name="terms">
+                        <option value="15">%15</option>
+                        <option value="25">%25</option>
+                        <option value="35">%35</option>
+                        <option value="50">%50</option>
+                        <option value="100">Full payment</option>
+                      </select>
+                    </label>
+                    <label for="date">
+                      <p>Pickup date</p>
+                      <input type="date" name="date" />
+                    </label>
+                  </div>
+
+                  <div class="action" data-aos="fade-right">
+                    <h5>Input Your Personal Details</h5>
+                    
+                    <label for="fullname">
+                      <p>Full name</p>
+                      <input type="text" placeholder="e.g John doe" name="fullname" />
+                    </label>
+                    <label for="email">
+                      <p>Email</p>
+                      <input class="form-input-box" type="email" placeholder="e.g user@mail.com" name="email" />
+                    </label>
+                    <label for="phone">
+                      <p>Phone number</p>
+                      <input type="tel" placeholder="e.g +2347060989331" name="phone" />
+                    </label>
+                  </div>
+
+                  <div class="buttons">
+                    <span class="btn">Back</span>
+                    <span class="btn">Next</span>
+                    <button class="btn" type="submit">Complete Submission</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </section>
+
+
+        <!--Clients section-->
+        <section id="clients" class="clients section-bg">
+            <div class="container">
+      
+              <div class="row" data-aos="zoom-in">
+      
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="./assets/imgs/clients/client-1.png" class="img-fluid" alt="">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="./assets/imgs/clients/client-2.png" class="img-fluid" alt="">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="./assets/imgs/clients/client-3.png" class="img-fluid" alt="">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="./assets/imgs/clients/client-4.png" class="img-fluid" alt="">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="./assets/imgs/clients/client-5.png" class="img-fluid" alt="">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                  <img src="./assets/imgs/clients/client-6.png" class="img-fluid" alt="">
+                </div>
+      
+              </div>
+      
+            </div>
+          </section><!-- End Clients Section -->
+        
+        <!--About us section-->
+        <section id="about" class="container about pt-3 pb-3">
+            <div class="heading-texts col-lg-12" data-aos="fade-up">
+                <h2 class="h1 pb-3">About us</h2>
+                <p>At Rentz leasing agency, we take pride in our values.</br>- <span>service</span>, <span>integrity</span> and <span>excellence</span>  </p>
+            </div>
+
+            <div class="row d-flex">
+                <div class="col-lg-6 d-flex flex-wrap justify-content-center">
+                    <div class="col-lg-5 col-md-6 pb-5" data-aos="fade-right">
+                        <h1><i class="fa-solid fa-users-viewfinder"></i></h1>
+                        <h4>Who we are</h4>
+                        <p>Leasing company offering quality and elegant-styled cars</p>
+                    </div>
+                    <div class="col-lg-5 col-md-6  pb-5" data-aos="fade-right">
+                        <h1><i class="fa-solid fa-car"></i></h1>
+                        <h4>What we do</h4>
+                        <p>Leasing company offering quality and elegant-styled cars</p>
+                    </div>
+                    <div class="col-lg-5 col-md-6  pb-5" data-aos="fade-right">
+                        <h1><i class="fa-solid fa-timeline"></i></h1>
+                        <h4>How does it work</h4>
+                        <p>Leasing company offering quality and elegant-styled cars</p>
+                    </div>
+                    <div class="col-lg-5 col-md-6  pb-5" data-aos="fade-right">
+                        <h1><i class="fa-solid fa-calendar-check"></i></h1>
+                        <h4>Create success story</h4>
+                        <p>Leasing company offering quality and elegant-styled cars</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="zoom-in-down">
+                    <img src="./assets/imgs/taycan4.png" width="100%" alt="car"/>
+                </div>
+            </div>
+        </section><!--End of About us section-->
+
+        <!--Cars section-->
+        <section id="cars" class="container cars pt-3 pb-3">
+            <div class="heading-texts" data-aos="fade-up">
+                <h2 class="h1 pb-3">Find Car to Lease</h2>
+                <p>Explore our top deal from top-rated dealers</p>
+            </div>
+
+                <ul class="d-flex categories">
+                    <li class="active">All</li>
+                    <li>Honda</li>
+                    <li>Volkwagen</li>
+                </ul>
+
+            <div class="owl-carousel car">
+                <div class="car-details p-2" data-aos="zoom-in-down">
+                    <img src="./assets/imgs/honda2.png" width="100%" alt="car"/>
+                    <p class="title">2020 Honda Pilot</p>
+                    <p class="price"><span>$150,000</span> | $322/month</p>
+                    <hr/>
+                    <div class="features d-flex justify-content-between">
+                        <p class="d-flex align-items-center"><i class="fa-solid fa-tachometer"></i> 20%</p>
+                        <p class="d-flex align-items-center"><i class="fas fa-car"></i> Auto</p>
+                        <p class="d-flex align-items-center"><i class="fas fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <button class="btn">Rent</button>
+                </div>
+                <div class="box car-details p-2" data-aos="flip-right">
+                    <img src="./assets/imgs/honda2.png" width="100%" alt="car"/>
+                    <p class="title">2020 Honda Pilot</p>
+                    <p class="price"><span>$150,000</span> | $322/month</p>
+                    <hr/>
+                    <div class="features d-flex justify-content-between">
+                        <p class="d-flex align-items-center"><i class="fa-solid fa-tachometer"></i> 20%</p>
+                        <p class="d-flex align-items-center"><i class="fas fa-car"></i> Auto</p>
+                        <p class="d-flex align-items-center"><i class="fas fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <button class="btn">Rent</button>
+                </div>
+                <div class="box car-details p-2" data-aos="flip-right">
+                    <img src="./assets/imgs/suv.png" width="100%" alt="car"/>
+                    <p class="title">2020 Honda Pilot</p>
+                    <p class="price"><span>$150,000</span> | $322/month</p>
+                    <hr/>
+                    <div class="features d-flex justify-content-between">
+                        <p class="d-flex align-items-center"><i class="fa-solid fa-tachometer"></i> 20%</p>
+                        <p class="d-flex align-items-center"><i class="fas fa-car"></i> Auto</p>
+                        <p class="d-flex align-items-center"><i class="fas fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <button class="btn">Rent</button>
+                </div>
+                <div class="box car-details p-2" data-aos="flip-right">
+                    <img src="./assets/imgs/volkswagen.png" width="100%" alt="car"/>
+                    <p class="title">2020 Honda Pilot</p>
+                    <p class="price"><span>$150,000</span> | $322/month</p>
+                    <hr/>
+                    <div class="features d-flex justify-content-between">
+                        <p class="d-flex align-items-center"><i class="fa-solid fa-tachometer"></i> 20%</p>
+                        <p class="d-flex align-items-center"><i class="fas fa-car"></i> Auto</p>
+                        <p class="d-flex align-items-center"><i class="fas fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <button class="btn">Rent</button>
+                </div>
+                <div class="box car-details p-2" data-aos="flip-right">
+                    <img src="./assets/imgs/volkswagen.png" width="100%" alt="car"/>
+                    <p class="title">2020 Honda Pilot</p>
+                    <p class="price"><span>$150,000</span> | $322/month</p>
+                    <hr/>
+                    <div class="features d-flex justify-content-between">
+                        <p class="d-flex align-items-center"><i class="fa-solid fa-tachometer"></i> 20%</p>
+                        <p class="d-flex align-items-center"><i class="fas fa-car"></i> Auto</p>
+                        <p class="d-flex align-items-center"><i class="fas fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <button class="btn">Rent</button>
+                </div>
+                <div class="box car-details p-2" data-aos="flip-right">
+                    <img src="./assets/imgs/volkswagen.png" width="100%" alt="car"/>
+                    <p class="title">2020 Honda Pilot</p>
+                    <p class="price"><span>$150,000</span> | $322/month</p>
+                    <hr/>
+                    <div class="features d-flex justify-content-between">
+                        <p class="d-flex align-items-center"><i class="fa-solid fa-tachometer"></i> 20%</p>
+                        <p class="d-flex align-items-center"><i class="fas fa-car"></i> Auto</p>
+                        <p class="d-flex align-items-center"><i class="fas fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <button class="btn">Rent</button>
+                </div>
+            </div>
+        </section><!--End of Cars section-->
+
+    <!-- ======= Contacts Section ======= -->
+        <section id="contact" class="container contact">
+            <div class="heading-texts" data-aos="fade-up">
+                <h2 class="h1 pb-3">Get In Touch</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+
+            <div class="d-flex flex-wrap">
+                <div class="col-lg-4 col-sm-12 m-auto contacts-left" data-aos="fade-up">
+                  <p>We'd love to hear from you. Our friendly team is always here to chat.</p>
+                  
+                  <div class="info p-3">
+                    <i class="fa-solid fa-envelope"></i> 
+                    <div class="texts">
+                      <h5>Chat to us</h5>
+                      <p>ABdesign@rentz.com</p>
+                    </div>
+                  </div>
+
+                  <div class="info p-3">
+                    <i class="fa-solid fa-location-dot"></i> 
+                    <div class="texts">
+                      <h5> Office</h5>
+                      <p>New York, NY 535022</p>
+                    </div>
+                  </div>
+
+                  <div class="info p-3">
+                    <i class="fa-solid fa-phone"></i> 
+                    <div class="texts">
+                      <h5>Phone</h5>
+                      <p>(+234) 706 0989 331</p>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="row form col-lg-8 col-sm-12 m-auto p-4 mb-5" data-aos="fade-right">
+                  <h4 class="m-3">Contact form</h4>
+                  <form class="row needs-validation m-auto" role="form" method="post" id="reused_form">
+                      <div class="col-lg-6 pt-4">
+                        <div class="form-input-box d-flex align-items-center mb-4">
+                            <i class="fa fa-user-alt"></i>
+                            <input class="form-control" id="firstname" placeholder="Firstname" name="firstname" required>
+                        </div>
+                          <div class="form-input-box d-flex align-items-center mb-4">
+                              <i class="fa fa-user-alt"></i>
+                              <input class="form-control" id="lastname" placeholder="Lastname" name="lastname" required>
+                          </div>
+                          <div class="form-input-box d-flex align-items-center mb-4">
+                              <i class="fa fa-envelope"></i>
+                              <input class="form-control" type="email" id="email" placeholder="Email Address" name="email" required>
+                          </div>
+                          <div class="form-input-box d-flex align-items-center">
+                              <i class="fa fa-phone"></i>
+                              <input class="form-control" type="tel" id="phone" placeholder="Phone number" name="phone" required>
+                          </div>
+                      </div>
+                      <div class="col-lg-6 pt-4">
+                          <div class="form-input-box d-flex">
+                              <i class="fa fa-edit"></i>
+                              <textarea class="form-control flex-1" id="message" placeholder="Message" name="message" required></textarea>
+                          </div>
+                      </div>
+                      <button class="btn mt-4" id="btnContactUs">Send Message</button>
+                  </form>
+                  <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                  <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+              </div>
+            </div>
+            
+        </section>
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="heading-texts" data-aos="fade-up">
+            <h2 class="h1 pb-3">Frequently Asked Questions</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+  
+          <div class="faq-list">
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                  <p>
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  </p>
+                </div>
+              </li>
+  
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </p>
+                </div>
+              </li>
+  
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </p>
+                </div>
+              </li>
+  
+            </ul>
+          </div>
+  
+        </div>
+      </section><!-- End Frequently Asked Questions Section -->
+
+
+            <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Rentz</h3>
+            <p>
+              1, Bill lane state <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +2347060989331<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>LINKS</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <!--Services navigations-->
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>SERVICES</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">UI/UX Design</a></li>
+            </ul>
+          </div> <!--End of services navigations-->
+
+          <!--Social media navigations-->
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>SOCIALS</h4>
+            <p>Connect with us on our social media networks</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa-brands fa-skype"></i></a>
+              <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div><!--End of social media navigations-->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <span>Rentz</span> All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://Abdesign.com/">AB Design</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+        
+    </div>
+
+
+
+    <div id="preloader">
+      
+      <svg  data-bs-target="#demo" data-bs-slide-to="0" class="active">
+        <circle cx="20" cy="20" r="10"></circle>
+        <circle cx="20" cy="20" r="10"></circle>
+      </svg>
+    </div>
+
+
+    <script src="./assets/vendors/bootstrap/js/bootstrap.js"></script>  
+    <script src="./assets/vendors/owlcarousel/js/jquery.min.js"></script>  
+    <script src="./assets/vendors/owlcarousel/js/owl.carousel.min.js"></script>  
+    <script src="./assets/vendors/aos/aos.js"></script>
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

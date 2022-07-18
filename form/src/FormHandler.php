@@ -44,7 +44,7 @@ class FormHandler
 
 		$this->mailer->Subject = "Contact Form Submission ";
 
-		$host = isset($_SERVER['SERVER_NAME'])?$_SERVER['SERVER_NAME']:'localhost';
+		$host = isset($_SERVER['rentzcars.herokuapp.com'])?$_SERVER['rentzcars.herokuapp.com']:'localhost';
         $from_email ='forms@'.$host;
    		$this->mailer->setFrom($from_email,'Contact Form',false);  
 

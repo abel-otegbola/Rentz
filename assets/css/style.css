@@ -389,8 +389,6 @@ section .heading-texts span {
 }
 .cars .car-details img {
     background-color: rgba(153, 153, 153, 0.172);
-    min-height: 150px;
-    max-height: 170px;
 }
 .cars .car-details p {
     font-weight: 600;

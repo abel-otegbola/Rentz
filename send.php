@@ -27,8 +27,8 @@ $message    = addslashes(strip_tags($_POST['message']));
   
 $mail = new PHPMailer();
 $mail->IsSMTP();                                   
-$mail->Host     = "mail.rentzcars.herokuapp.com"; // smtp host
-$mail->Port     = "25";  // Port
+$mail->Host     = "smtp.gmail.com"; // smtp host
+$mail->Port     = 465,  // Port
 $mail->SMTPAuth = true;    
 $mail->Username = "abeldeveloper2@gmail.com";  //mail address
 $mail->Password = "Gbengaotes1"; //email password
